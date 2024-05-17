@@ -9,7 +9,7 @@ def get_chat_response(prompt, memory, openai_api_key):
     # model = ChatOpenAI(model="dall-e-3", 
     #                    openai_api_key="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",
     #                    base_url="https://api.aigc369.com/v1")
-    model = ChatOpenAI(model="gpt-3.5.turbo", 
+    model = ChatOpenAI(model="gpt-3.5-turbo", 
                        openai_api_key="sk-eIxdgzUkkdfvcLSYD9306822213945Bf859f2cB63d3c5d18",
                        base_url="https://api.aigc369.com/v1")
     chain = ConversationChain(llm=model, memory=memory)
