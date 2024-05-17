@@ -10,7 +10,8 @@ def get_chat_response(prompt, memory, openai_api_key):
     #                    openai_api_key="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",
     #                    base_url="https://api.aigc369.com/v1")
     model = ChatOpenAI(model="gpt-4-0125-preview", 
-                       openai_api_key="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")
+                       openai_api_key="sk-eIxdgzUkkdfvcLSYD9306822213945Bf859f2cB63d3c5d18",
+                       base_url="https://api.aigc369.com/v1")
     chain = ConversationChain(llm=model, memory=memory)
 
     response = chain.invoke({"input": prompt})
